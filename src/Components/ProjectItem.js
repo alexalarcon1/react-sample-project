@@ -6,8 +6,7 @@ class ProjectItem extends Component {
   }
 
   render() {
-  	//console.log(this.props)
-    console.log(this.props.project)
+    //console.log(this.props.project)
     return (
       <li className="Project">
       	<strong>{this.props.project.title}</strong> - {this.props.project.category} <a href="#" onClick={this.deleteProject.bind(this, this.props.project.id)}>X</a>
